@@ -13,9 +13,10 @@ const Navbar = () => {
               alt="Logo"
               className="pl-11"
             />
-            <span className="text-green-700 font-bold text-3xl mt-2">
-              ONG Taniguchiana
-            </span>
+              <div  className="flex flex-col">
+                <span className="text-green-700 font-bold text-3xl mt-2"> ONG Taniguchiana </span>
+                <span className="text-green-700 "> Ser diferente é ser eficiente. </span>
+              </div>
           </div>
           
           <div className="hidden md:flex space-x-6 items-center mr-24 mt-3">

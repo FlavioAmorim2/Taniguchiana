@@ -4,39 +4,21 @@ interface SectionProps {
   title: string;
   description: string;
   image: string;
-  textPosition: "left" | "center" | "right";
+  textPosition: "left" | "right";
 }
 
 const Section: React.FC<SectionProps> = ({ title, description, image, textPosition }) => {
-  const textAlign = textPosition === "center" ? "text-center" : "text-left";
-  const justifyContent =
-    textPosition === "right"
-      ? "justify-end"
-      : textPosition === "center"
-      ? "justify-center"
-      : "justify-start";
+  const flexDirection = textPosition === "right" ? "flex-row-reverse" : "flex-row";
 
   return (
-    <section
-      className="relative h-[50vh] bg-cover bg-center flex items-center"
-      style={{ backgroundImage: `url(${image})` }}
-    >
-      <div
-        className={`absolute top-0 left-0 w-full h-full bg-black bg-opacity-30`}
-      ></div>
-      <div
-        className={`relative z-10 w-full max-w-5xl mx-auto px-6 flex ${justifyContent}`}
-      >
-        <div className={`bg-white p-6 rounded-md shadow-lg max-w-sm ${textAlign}`}>
-          <h2 className="text-2xl font-bold mb-4">{title}</h2>
-          <p className="text-gray-700 mb-4">{description}</p>
-          <a
-            href="#"
-            className="text-blue-500 font-semibold hover:underline"
-          >
-            Leia mais
-          </a>
-        </div>
+    <section className={`flex ${flexDirection} bg-gray-100 p-6 rounded-lg shadow-md`}>
+      <div className="w-1/2">
+        <img src={image} alt={title} className="w-full h-auto rounded-md shadow-md" />
+      </div>
+
+      <div className="w-1/2 bg-white p-6 rounded-md shadow-lg">
+        <h2 className="text-2xl font-bold mb-4">{title}</h2>
+        <p className="text-gray-700 mb-4">{description}</p>
       </div>
     </section>
   );

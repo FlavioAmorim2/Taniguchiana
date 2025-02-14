@@ -1,7 +1,7 @@
 import Section from '../../components/Section';
-import missao from '../../assets/imgs/missao.jpg'; 
+import missao from '../../assets/imgs/missao.jpg';
 import visao from '../../assets/imgs/visao.jpg';
-import valores from '../../assets/imgs/valores.jpg'
+import valores from '../../assets/imgs/valores.jpg';
 
 const MainLayout = () => {
   return (
@@ -19,7 +19,7 @@ const MainLayout = () => {
         image={visao}
         textPosition="right"
       />
-
+  
       <Section
         title="Valores"
         description="A ONG Taniguchiana, tem como foco principal a inserção das pessoas com deficiência no mercado de trabalho. Com isso, nossos valores são: ética profissional, respeito mútuo, adequação organizacional e crescimento profissional."

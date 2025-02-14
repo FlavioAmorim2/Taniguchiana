@@ -1,4 +1,5 @@
 // import React from "react";
+import AboutUs from "../pages/aboutUs/AboutPage";
 import "../styles/navigation.css";
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
                 Modalidades
               </a>
 
-              <a href="#sobre-nos" className="">
+              <a href='' className="">
                 Sobre Nós
               </a>
 

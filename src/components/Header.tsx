@@ -1,13 +1,13 @@
-// import React from "react";
-import AboutUs from "../pages/aboutUs/AboutPage";
-import "../styles/navigation.css";
+import { Link } from 'react-router-dom';
 
+import "../styles/navigation.css";
+// import logo from "../assets/logo/cropped-cropped-tanicuchiana_sem_texto-1-100x100.png";
 const Navbar = () => {
   const simpleHeader = (
     <header className="bg-white shadow sticky top-0 z-50 flex text-xl top-0 shadow-xl ">
       <div className="mx-auto px-1 py-1 w-full ">
         <div className="flex justify-between w-full">
-          {/* Logo */}
+
           <div className="flex items-center">
             <img
               src="/src/assets/logo/cropped-cropped-tanicuchiana_sem_texto-1-100x100.png "
@@ -22,29 +22,27 @@ const Navbar = () => {
           
           <div className="hidden md:flex space-x-6 items-center mr-24 mt-3">
             <div className="nav-links">
-
-              <a href="" className="">
+              <Link to="/" >
                 Início
-              </a>
+              </Link>
 
-              <a href="#cursos" className="">
+              <Link to="/" >
                 Cursos
-              </a>
+              </Link>
 
-              <a href="#modalidades" className="">
+              <Link to="/" >
                 Modalidades
-              </a>
+              </Link>
 
-              <a href='' className="">
+              <Link to="/about" >
                 Sobre Nós
-              </a>
+              </Link>
 
-              <a href="#contato" className="">
+              <Link to="/contact" >
                 Contato
-              </a>
+              </Link>
             </div>
           </div>
-
         </div>
       </div>
     </header>

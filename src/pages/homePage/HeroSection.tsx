@@ -1,4 +1,3 @@
-import React from "react";
 import PlanoDeInclusao from "../../assets/imgs/PlanoDeInclusao.jpg";
 import "../../styles/herosection.css";
 

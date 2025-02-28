@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useContext, useRef } from "react";
 
 interface ScrollContextType {
@@ -32,5 +33,6 @@ export const useScroll = () => {
   if (!context) {
     throw new Error("useScroll must be used within a ScrollProvider");
   }
+  
   return context;
 };

@@ -1,24 +1,3 @@
-// import React from "react";
-// import HeroSection from "./HeroSection";
-// import MainLayout from "./MainLayout";
-// import AboutUs from "../aboutUs/AboutPage";
-// import { useScroll } from "../../context/ScrollContext";
-
-// const HomePage: React.FC = () => {
-//   const { aboutRef } = useScroll();
-//   const { herosectionRef } = useScroll();
-
-//   return (
-//     <div>
-//       <HeroSection herosectionRef={herosectionRef} />
-//       <MainLayout />
-//       <AboutUs aboutRef={aboutRef} />
-//     </div>
-//   );
-// };
-
-// export default HomePage;
-
 import React from "react";
 import HeroSection from "./HeroSection";
 import MainLayout from "./MainLayout";

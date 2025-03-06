@@ -22,7 +22,7 @@ const HeroSection = () => {
         </p>
 
         <button className="bg-blue-500 px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all animate-pulse-slow">
-          Inscreva-se
+          <a href="https://forms.gle/rpNWpjVsaej1FvqWA" target="_blank">Inscreva-se</a>
         </button>
   </div>
     </section>

@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex space-x-6 items-center mr-24 mt-3">
           <div className="nav-links">
             <button onClick={() => scrollToSection(heroRef)}> Início </button>
-            <button onClick={() => scrollToSection(aboutRef)}> Sobre Nós </button>
+            <button onClick={() => scrollToSection(aboutRef)}> Sobre nós </button>
             <button onClick={() => scrollToSection(contactRef)}> Contato </button>
           </div>
         </div>

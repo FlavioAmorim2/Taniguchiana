@@ -24,9 +24,9 @@ const Contact = () => {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold mb-4">Contato</h2>
-          <form className="flex flex-col space-y-4 bg-white p-6 rounded-lg shadow-md">
-            <label className="text-gray-800 font-medium">
+          <h2 className="text-2xl text-black font-bold text-green-700 text-center mb-4">Contato</h2>
+          <form className="flex flex-col space-y-4 bg-white p-6 rounded-lg text-center"> {/*shadow-md* /
+            {/* <label className="text-gray-800 font-medium">
               Nome completo <span className="text-red-500">*</span>
             </label>
             <input 
@@ -50,10 +50,10 @@ const Contact = () => {
             <textarea 
               className="border border-gray-300 p-2 rounded h-32 text-black"
               required
-            ></textarea>
-
-            <button className="bg-black text-white py-2 rounded-lg hover:bg-gray-900 transition">
-              ENVIAR
+            ></textarea> */}
+                  {/* <h2 className="text-black font-bold text-green-700 text-xl">Fale conosco</h2> */}
+            <button className="bg-blue-500 px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all animate-pulse-slow">
+              <a href="https://forms.gle/PmvozApHJ9aUmxCv6" target="_blank">Click para enviar uma mensagem</a>
             </button>
           </form>
         </div>

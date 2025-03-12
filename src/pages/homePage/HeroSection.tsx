@@ -1,6 +1,6 @@
 import PlanoDeInclusao from "../../assets/imgs/PlanoDeInclusao.jpg";
 import "../../styles/herosection.css";
-
+ 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen pt-10 flex flex-col justify-center items-center text-white text-center overflow-hidden">

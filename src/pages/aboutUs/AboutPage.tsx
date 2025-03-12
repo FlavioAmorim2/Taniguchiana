@@ -1,53 +1,81 @@
-import quemSomos from '../../assets/imgs/quemSomos.png';
-import doe from '../../assets/imgs/doe.jpg';
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/swiper-bundle.css";
+import { history } from "../../context/history";
+import doe from '../../assets/imgs/doee.jpg';
+
+
 
 interface AboutUsProps {
   aboutRef?: React.RefObject<HTMLDivElement>;
 }
 
-const AboutUs: React.FC<AboutUsProps> = ({ aboutRef }) =>  {
+const AboutUs: React.FC<AboutUsProps> = ({ aboutRef }) => {
+  const historia = history
+
+  const [, setSlideAtivo] = useState(0);
+
   return (
-    <div  ref={aboutRef} className="animate-slide-in-left bg-gray-50 py-16 px-6 ">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center space-y-10 lg:space-y-0 lg:space-x-10">
-        <div className="lg:w-1/2" id="aboutt">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Sobre nós</h2>
-          <p className="text-gray-700 mb-6">
-            A Taniguchiana “nasceu” em 2011. Nossa fundadora foi professora de Jovem Aprendiz de uma grande Instituição Qualificadora. Por meio desta experiência, teve contato com jovens carentes e sentiu o quão enriquecedor é o programa para as suas vidas, tendo a chance da tão sonhada inserção no mercado de trabalho, podendo ajudar as suas famílias. A primeira ideia era em “cuidar” dos jovens pós término contrato do programa aprendizado, já que o projeto jovem aprendiz, é dos 14 aos 24 anos, e estes jovens se não são efetivados pela empresa, assim que termina o contrato, eles “voltam para o mesmo lugar de onde saíram”. E isto começou a lhe intrigar. Taniguchiana foi o nome escolhido para a ONG. É derivado do grande mentor espiritual da Seicho-No-Ie, o Sr. Masaharu Taniguchi, tendo em vista a orientação de nossa fundadora para seguir com o projeto e por abrir a minha visão para aqueles que mais precisam de nossa ajuda e colaboração.
+    <div ref={aboutRef} className=" bg-gray-50 py-16 flex flex-col items-center">
+      <h2 className="text-3xl font-bold text-gray-800 text-center mb-6">
+        Nossa História
+      </h2>
+
+      <div className="w-full max-w-6xl">
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          spaceBetween={10}
+          slidesPerView={1}
+          className="w-full h-full rounded-xl shadow-lg bg-gray-100"
+          onSlideChange={(swiper) => setSlideAtivo(swiper.activeIndex)}
+        >
+          {historia.map((item, index) => (
+           <SwiperSlide
+           key={index}
+           className="flex flex-col items-center justify-center text-center px-8 h-full"
+         >
+           <h3 className="text-lg font-semibold text-green-900">
+             {item.ano}
+           </h3>
+           <p className="col-span-9 text-gray-700 text-left leading-relaxed ml-7 mr-7 ">
+            {item.texto.map((paragrafo: string, idx: number) => (
+              <span key={idx} className="block mb-4">{paragrafo}</span>
+            ))}
           </p>
-        </div>
-
-        <div className="md:w-1/2">
-          <img
-            src={quemSomos}
-            alt="Quem somos"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-
+         </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-
       <div
-        className="relative mt-16 py-24 px-6 text-white rounded-lg bg-fixed bg-cover bg-center md:bg-[50%_30%] lg:bg-[50%_20%]"
+        className="relative w-full max-w-7xl mx-auto mt-16 py-24 px-6 text-white rounded-lg bg-fixed bg-cover bg-center md:bg-[50%_30%] lg:bg-[50%_20%] before:absolute before:inset-0 before:bg-black before:opacity-50"
         style={{
           backgroundImage: `url(${doe})`,
         }}>
 
-        <div className="max-w-4xl mx-auto text-center" >
-          <h3 className="text-lg font-semibold uppercase tracking-wide text-green-700">
+        <div className="absolute inset-0 bg-black opacity-50 rounded-lg "></div>
+
+        <div className=" relative max-w-4xl mx-auto text-center " >
+          <h3 className="text-lg font-semibold uppercase tracking-wide ">
             Quer fazer a diferença?
           </h3>
           
-          <h2 className="text-4xl font-bold my-4 text-green-700">
+          <h2 className=" relative text-4xl font-bold my-4  ">
             Ajude-nos a arrecadar fundos para nossas causas humanitárias 
           </h2>
 
           <button className="bg-blue-500 px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all relative z-10 animate-pulse-slow">
-            Doar
+           <a href="https://www.asaas.com/c/225559079703" target='_blank'>Doar</a> 
           </button>
         </div>
       </div>
     </div>
+
+    
+    
   );
 };
 
 export default AboutUs;
+

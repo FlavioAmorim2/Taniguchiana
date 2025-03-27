@@ -4,5 +4,9 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  "include": ["src", "styles.d.ts"]
+  "include": ["src", "styles.d.ts"],
+  
+  // "compilerOptions": {
+  //   "lib": ["ES2015", "DOM"]
+  // }
 }

@@ -1,5 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-const Subscribe = () => {
-    return (_jsxs("div", { children: [_jsxs("div", { children: [_jsx("h1", { children: "Cadastro" }), _jsx("br", {})] }), _jsxs("form", { children: [_jsxs("fieldset", { children: [_jsxs("div", { children: [_jsx("label", { children: _jsx("strong", { children: "Nome" }) }), _jsx("input", { type: "text", name: "nome", id: "nome" })] }), _jsxs("div", { children: [_jsx("label", { children: _jsx("strong", { children: "Sobrenome" }) }), _jsx("input", { type: "text", name: "sobrenome", id: "sobrenome" })] }), _jsxs("div", { children: [_jsx("label", { children: _jsx("strong", { children: "Sobrenome" }) }), _jsx("input", { type: "text", name: "sobrenome", id: "sobrenome" })] }), _jsxs("div", { children: [_jsx("label", { children: _jsx("strong", { children: "Idade" }) }), _jsx("input", { type: "number", name: "idade", id: "idade" })] })] }), _jsxs("div", { children: [_jsx("label", { children: _jsx("strong", { children: "Email" }) }), _jsx("input", { type: "email", name: "email", id: "email" })] }), _jsx("div", {})] })] }));
-};
-export default Subscribe;

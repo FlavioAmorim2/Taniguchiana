@@ -1,8 +1,9 @@
-import { useScroll } from "../context/ScrollContext";
+// import { useScroll } from "../context/ScrollContext";
 import "../styles/navigation.css";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
-  const { heroRef, aboutRef, contactRef, scrollToSection } = useScroll();
+  // const {contactRef, scrollToSection } = useScroll(); //aboutRef heroRef
 
   return (
     <header className="bg-white shadow sticky top-0 z-50 flex text-xl shadow-xl rounded-lg absolute">
@@ -17,9 +18,11 @@ const Navbar: React.FC = () => {
 
         <div className="hidden md:flex space-x-6 items-center mr-24 mt-3">
           <div className="nav-links">
-            <button onClick={() => scrollToSection(heroRef)}> Início </button>
-            <button onClick={() => scrollToSection(aboutRef)}> Sobre nós </button>
-            <button onClick={() => scrollToSection(contactRef)}> Contato </button>
+            {/* <button onClick={() => scrollToSection(heroRef)}> Início </button> */}
+            {/* <button onClick={() => scrollToSection(aboutRef)}> Sobre nós </button> */}
+            <Link to={"/"} className="nav-links">Início</Link>
+            <Link to={"/about"} className="nav-links">Sobre nós</Link>
+            {/* <button onClick={() => scrollToSection(contactRef)}> Contato </button> */}
           </div>
         </div>
       </div>

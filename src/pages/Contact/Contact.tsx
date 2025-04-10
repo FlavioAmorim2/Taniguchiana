@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaTelegram } from "reac
 
 const Contact = () => {
   return (
-    <section className="bg-teal-800 text-white py-16 px-6 bg-#1E746D">
+    <section className="bg-teal-800 text-white py-16 px-6 bg-#1E746D mt-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
 
         <div className="flex flex-col items-center">

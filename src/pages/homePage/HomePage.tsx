@@ -1,25 +1,21 @@
-import React from "react";
 import HeroSection from "./HeroSection";
 import MainLayout from "./MainLayout";
-import AboutUs from "../aboutUs/AboutPage";
-import Contact from "../Contact/Contact";
-import { useScroll } from "../../context/ScrollContext";
+import Doe from "../../components/Doe"
+// import AboutUs from "../aboutUs/AboutPage";
+// import Contact from "../Contact/Contact";
+// import { useScroll } from "../../context/ScrollContext";
 
 const HomePage: React.FC = () => {
-  const { heroRef, aboutRef, contactRef } = useScroll();
+  // const { contactRef } = useScroll(); //aboutRef heroRef
 
   return (
     <div>
-      <div ref={heroRef}>
-        <HeroSection />
-      </div>
+      <HeroSection />
       <MainLayout />
-      <div ref={aboutRef}>
-        <AboutUs />
-      </div>
-      <div ref={contactRef}>
+      <Doe />
+      {/* <div ref={contactRef}>
         <Contact />
-      </div>
+      </div> */}
     </div>
   );
 };

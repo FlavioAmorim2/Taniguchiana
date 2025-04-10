@@ -1,8 +1,6 @@
-import React from "react";
-
 interface SectionProps {
   title: string;
-  description: string;
+  description: string | string[];
   image: string;
   textPosition: "left" | "right";
 }
@@ -18,7 +16,15 @@ const Section: React.FC<SectionProps> = ({ title, description, image, textPositi
 
       <div className="w-1/2 bg-white p-6 rounded-md shadow-lg">
         <h2 className="text-2xl font-bold mb-4">{title}</h2>
-        <p className="text-gray-700 mb-4">{description}</p>
+        {Array.isArray(description) ? (
+          <ul className=" list-inside text-gray-700 space-y-2">
+            {description.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-gray-700 mb-4">{description}</p>
+        )}
       </div>
     </section>
   );

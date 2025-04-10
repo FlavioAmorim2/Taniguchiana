@@ -8,24 +8,30 @@ const MainLayout = () => {
     <div className="space-y-16 py-10 px-6 max-w-6xl mx-auto">
       <Section
         title="Missão"
-        description="A missão da ONG Taniguchiana é capacitar, qualificar e inserir Jovens Aprendizes PcDs no mercado de trabalho, em empresas públicas e privadas, de forma efetiva e consistente, reduzindo as diferenças sociais e promovendo a possibilidade da geração de emprego e renda, e independência financeira."
+        description="Capacitar e qualificar o público em geral, oferecendo oportunidades de aprendizado acessíveis e inclusivas. Fornecemos conteúdos de qualidade e ferramentas eficazes para impulsionar carreiras e transformar vidas."
         image={missao}
         textPosition="left"
       />
 
       <Section
         title="Visão"
-        description="A visão da ONG Taniguchiana é tornar-se referência na promoção, na capacitação, qualificação e reabilitação assistencial de PCDs para o mercado de trabalho através de metodologia adequada e inovadoras."
+        description="Ser referência em capacitação e qualificação profissional, disponibilizando um portal completo de cursos técnicos e profissionalizantes, tanto presenciais quanto a distância (EAD), garantindo acessibilidade e excelência no ensino."
         image={visao}
         textPosition="right"
       />
   
       <Section
-        title="Valores"
-        description="A ONG Taniguchiana, tem como foco principal a inserção das pessoas com deficiência no mercado de trabalho. Com isso, nossos valores são: ética profissional, respeito mútuo, adequação organizacional e crescimento profissional."
-        image={valores}
-        textPosition="left"
+         title="Valores"
+         description={[
+           "1) Respeito e valorização do ser humano.",
+           "2) Ética e profissionalismo incondicionais nas relações com todos os segmentos da sociedade.",
+           "3) Desenvolvimento e aprimoramento constante de seus colaboradores."
+         ]}
+         image={valores}
+         textPosition="left"
       />
+
+      
     </div>
   );
 };

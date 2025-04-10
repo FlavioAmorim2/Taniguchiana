@@ -51,6 +51,18 @@
         "Em 2021, estamos no processo de parcerias para adquirir nosso espaço físico, cursos de aperfeiçoamento, participando de editais para buscar recursos e assim podermos de fato iniciar nossas atividades na prática."
     ]
     },
+    {
+      ano: " 2022 - 2024",
+      texto:[
+        "a Taniguchiana manteve suas atividades em pausa devido à percepção de baixa aceitação, por parte das empresas, de profissionais com deficiência treinados. Diante desse cenário desfavorável, tornou-se essencial repensar sua atuação e buscar um novo viés para ampliar seu impacto e relevância."
+    ]
+    },
+    {
+      ano: " - 2025",
+      texto:[
+        "Estamos em 2025, e os últimos três anos foram decisivos para reconhecermos a necessidade de um novo direcionamento para a Taniguchiana. Após uma análise profunda do cenário atual, decidimos realizar uma virada de chave, mantendo nosso compromisso com a educação e o treinamento. Nosso foco agora será a oferta de cursos técnicos e profissionalizantes em diversas áreas, com o propósito de alcançar o maior número possível de pessoas — tanto aquelas que buscam aprendizado quanto as que desejam compartilhar seu conhecimento. Acreditamos que, dessa forma, poderemos ampliar nosso impacto e fortalecer nossa missão de transformar vidas por meio da qualificação profissional."
+    ]
+    },
 
   ];
 

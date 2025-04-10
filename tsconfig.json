@@ -10,7 +10,10 @@
     "compilerOptions": {
       "esModuleInterop": true,
       "allowSyntheticDefaultImports": true,
-      // outras opções...
+      "declaration": true,
+      "declarationDir": "types",
+      "outDir": "build",
+      "noEmit": false
   }
   
 }

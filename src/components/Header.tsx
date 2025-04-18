@@ -21,6 +21,8 @@ const Navbar: React.FC = () => {
             {/* <button onClick={() => scrollToSection(heroRef)}> Início </button> */}
             {/* <button onClick={() => scrollToSection(aboutRef)}> Sobre nós </button> */}
             <Link to={"/"} className="nav-links">Início</Link>
+            <Link to={"/Courses"} className="nav-links">Cursos</Link>
+            <Link to={"/Team"} className="nav-links">Equipe</Link>
             <Link to={"/about"} className="nav-links">Sobre nós</Link>
             {/* <button onClick={() => scrollToSection(contactRef)}> Contato </button> */}
           </div>

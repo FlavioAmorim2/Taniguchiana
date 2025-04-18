@@ -7,6 +7,8 @@ import AboutUs from "./pages/aboutUs/AboutPage";
 import Contact from "./pages/Contact/Contact";
 import HomePage from "./pages/homePage/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
+import Courses from "./pages/Courses/Courses";
+import Team from "./pages/Team/Team";
 
 const App = () => { //: React.FC 
   return (
@@ -17,6 +19,8 @@ const App = () => { //: React.FC
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/Courses" element={<Courses />} />
+            <Route path="/Team" element={<Team />} />
             <Route path="/about" element={<AboutUs />} />
           </Routes>
           <Contact />

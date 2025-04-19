@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaTelegram } from "reac
 
 const Contact = () => {
   return (
-    <section className="bg-teal-800 text-white py-16 px-6 bg-#1E746D mt-20">
+    <section className="bg-gray-100 text-white py-16 px-6 mt-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
 
         <div className="flex flex-col items-center">
@@ -25,7 +25,7 @@ const Contact = () => {
 
         <div>
           <h2 className="text-2xl text-black font-bold text-green-700 text-center mb-4">Contato</h2>
-          <form className="flex flex-col space-y-4 bg-white p-6 rounded-lg text-center"> {/*shadow-md* /
+          <form className="bg-gray-100 flex flex-col space-y-4 bg-white p-6 rounded-lg text-center"> {/*shadow-md* /
             {/* <label className="text-gray-800 font-medium">
               Nome completo <span className="text-red-500">*</span>
             </label>

@@ -10,7 +10,7 @@ const Team: React.FC = () => {
             Conheça nossa equipe
           </h1>
     
-          <p className="text-lg md:text-2xl text-teal-900 leading-relaxed max-w-4xl text-left mb-10">
+          <p className="text-lg md:text-2xl text-gray-700 leading-relaxed max-w-4xl text-justify mb-10">
             Há na <strong className="font-semibold">TANIGUCHIANA</strong> naturalmente um time multidisciplinar que
             possui competência para capacitar, qualificar e promover o portador de
             deficiência para atender as necessidades dos nossos parceiros.

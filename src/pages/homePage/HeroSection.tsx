@@ -13,11 +13,11 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative z-10 text-center" style={{ top: "-10%", transform: "translateY(-30%)" }}>
-        <h1 className="text-4xl font-bold uppercase text-white-700">
+        <h1 className="text-6xl font-bold uppercase text-white-700">
           Educação sem barreiras.
         </h1>
 
-        <p className="text-2xl mb-6 font-bold pt-1">
+        <p className="text-3xl mb-6 font-bold pt-1">
           Aprenda, cresça e transforme seu futuro
         </p>
 

@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="text-center">
           <h2 className=" text-green-700 text-2xl font-bold mb-4">O que nós fazemos?</h2>
           <p className="text-green-700 text-left">
-            Somos uma Organização Governamental sem Fins Lucrativos (ONG), que tem como objetivo tornar o mercado de trabalho um ambiente mais inclusivo. Desde 2011 assumimos o compromisso social de impactar vidas de pessoas com deficiência, através da capacitação profissional. Buscamos contribuir e representar uma parcela da sociedade pouco assistida, a fim de desenvolver um potencial de trabalho técnico e humano, oferecendo apoio e motivação para um estilo de vida socialmente inclusiva.
+            Somos a TANIGUCHIANA - Ação Beneficente de Integração Técnico Profissionalizantes, uma Organização Não Governamental sem fins lucrativos que, desde 2011, tem como missão promover a inclusão no mercado de trabalho por meio da capacitação técnica e humana. Nosso compromisso social é impactar vidas oferecendo oportunidades reais de desenvolvimento profissional, seja em cursos presenciais ou a distância. Atuamos como um portal de integração e valorização, buscando representar e apoiar uma parcela da sociedade historicamente pouco assistida, incentivando um estilo de vida mais autônomo, digno e socialmente inclusivo. Porque acreditamos que ser diferente é ser eficiente.
           </p>
         </div>
 

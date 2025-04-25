@@ -77,14 +77,6 @@ const Team: React.FC = () => {
           </div>
 
           <div>
-            <h3>Serviço Social</h3>
-            <ul>
-              <li>Auxilia na garantia dos direitos de inclusão</li>
-              <li>Comunicação com as famílias dos alunos assistidos pelo programa</li>
-            </ul>
-          </div>
-
-          <div className="border-t border-black pt-4">
             <h3>Comercial</h3>
             <ul>
               <li>Aberto a novas parcerias</li>
@@ -97,14 +89,6 @@ const Team: React.FC = () => {
             <ul>
               <li>Suporte legal</li>
               <li>Atua na elaboração de pareceres</li>
-            </ul>
-          </div>
-
-          <div className="border-t border-black pt-4">
-            <h3>Comunicação</h3>
-            <ul>
-              <li>Responsável por levar a mensagem da ONG para mais pessoas</li>
-              <li>Criação de conteúdo engajado com o propósito da ONG</li>
             </ul>
           </div>
 

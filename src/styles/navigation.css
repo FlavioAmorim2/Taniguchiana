@@ -4,7 +4,8 @@
   height: auto; 
 }
 
-  .nav-links {
+
+.nav-links {
     display: flex;
     gap: 24px; /* Espaçamento entre os itens */
     align-items: center;
@@ -44,3 +45,19 @@
 .nav-links a:hover::after {
     background-color: rgba(0, 128, 0, 0.6); 
 }
+
+.nav-links {
+    color: #14532d; /* text-green-900 */
+    transition-property: color;
+    transition-duration: 300ms;
+  }
+  
+  .nav-links:hover {
+    color: #15803d; /* text-green-700 */
+  } 
+
+ @media (max-width: 768px) {
+    .nav-links {
+      font-size: 1.1rem;
+    }
+  }

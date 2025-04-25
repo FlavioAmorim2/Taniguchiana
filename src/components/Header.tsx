@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     <header className="bg-white shadow sticky top-0 z-50 text-xl shadow-xl rounded-lg">
       <div className="mx-auto px-4 py-2 w-full flex justify-between items-center">
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="pl-4 navbar-logo w-12" />
+          <img src={logo} alt="Logo" className="pl-4 navbar-logo w-6" />
           <div className="flex flex-col ml-2">
             <span className="text-green-700 font-bold text-base">ONG Taniguchiana</span>
             <span className="text-green-700 text-sm">Ser diferente é ser eficiente.</span>
@@ -31,12 +31,14 @@ const Navbar: React.FC = () => {
           </svg>
         </button>
 
-        <div className="hidden md:flex space-x-6 items-center mr-8">
-          <Link to="/" className="nav-links">Início</Link>
-          <Link to="/Courses" className="nav-links">Cursos</Link>
-          <Link to="/Team" className="nav-links">Equipe</Link>
-          <Link to="/about" className="nav-links">Sobre nós</Link>
-        </div>
+           <div className="hidden md:flex space-x-6 items-center mr-24 mt-3">
+             <div className="nav-links">
+                <Link to={"/"} className="nav-links">Início</Link>
+                <Link to={"/Courses"} className="nav-links">Cursos</Link>
+                <Link to={"/Team"} className="nav-links">Equipe</Link>
+                <Link to={"/about"} className="nav-links">Sobre nós</Link>
+           </div>
+         </div>
       </div>
 
       {isOpen && (
@@ -52,3 +54,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+

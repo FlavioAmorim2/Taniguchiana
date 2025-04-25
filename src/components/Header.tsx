@@ -17,7 +17,6 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* Botão hamburger */}
         <button
           className="md:hidden focus:outline-none text-green-700"
           onClick={() => setIsOpen(!isOpen)}
@@ -32,7 +31,6 @@ const Navbar: React.FC = () => {
           </svg>
         </button>
 
-        {/* Links normais para desktop */}
         <div className="hidden md:flex space-x-6 items-center mr-8">
           <Link to="/" className="nav-links">Início</Link>
           <Link to="/Courses" className="nav-links">Cursos</Link>
@@ -41,7 +39,6 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Menu mobile */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center pb-4 space-y-2">
           <Link to="/" className="nav-links" onClick={() => setIsOpen(false)}>Início</Link>

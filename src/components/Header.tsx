@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     <header className="bg-white shadow sticky top-0 z-50 text-xl shadow-xl rounded-lg">
       <div className="mx-auto px-4 py-2 w-full flex justify-between items-center">
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="pl-4 navbar-logo w-6" />
+          <img src={logo} alt="Logo" className="pl-4 navbar-logo" />
           <div className="flex flex-col ml-2">
             <span className="text-green-700 font-bold text-base">ONG Taniguchiana</span>
             <span className="text-green-700 text-sm">Ser diferente é ser eficiente.</span>

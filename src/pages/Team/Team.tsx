@@ -11,9 +11,7 @@ const Team: React.FC = () => {
           </h1>
     
           <p className="text-lg md:text-2xl text-gray-700 leading-relaxed max-w-4xl text-justify mb-10">
-            Há na <strong className="font-semibold">TANIGUCHIANA</strong> naturalmente um time multidisciplinar que
-            possui competência para capacitar, qualificar e promover o portador de
-            deficiência para atender as necessidades dos nossos parceiros.
+            A <strong className="font-semibold">TANIGUCHIANA</strong> conta, naturalmente, com um time multidisciplinar altamente capacitado, dedicado e preparado para acolher, capacitar e impulsionar o público em geral. Nossa equipe reúne competência técnica e sensibilidade para desenvolver, qualificar e integrar pessoas, sempre alinhando-se às necessidades operacionais e estratégicas dos nossos parceiros, com excelência e comprometimento.
           </p> 
 
 

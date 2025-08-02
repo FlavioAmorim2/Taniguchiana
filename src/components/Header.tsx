@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="pl-4 navbar-logo" />
           <div className="flex flex-col ml-2">
-            <span className="text-green-700 font-bold text-base">ONG Taniguchiana</span>
+            <span className="text-green-700 font-bold text-2xl">ONG Taniguchiana</span>
             <span className="text-green-700 text-sm">Ser diferente é ser eficiente.</span>
           </div>
         </div>
